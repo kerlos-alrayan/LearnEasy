@@ -3,7 +3,7 @@ import 'package:learner_app/screens/account_screen.dart';
 import 'package:learner_app/screens/main_screen.dart';
 import 'package:learner_app/screens/messages_screen.dart';
 import 'package:learner_app/screens/notification_screen.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final controler = PersistentTabController(initialIndex: 0);
+  final controller = PersistentTabController(initialIndex: 0);
   List<Widget> _buildScreen() {
     return [
       MainScreen(),
